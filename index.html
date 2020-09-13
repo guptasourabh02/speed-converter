@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speed Converter</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script type="text/javascript" src="./js/script.js"></script>	
+</head>
+  
+<body>
+	<div class="container">
+		<h3>Speed Converter</h3>
+		<form id="speed-converter">
+			<label>KPH</label>
+			<input id="kph" type="number" step="any" oninput="kphConverter()" onChange="kphConverter()">
+			<label>MPH</label>
+			<input id="mph" type="number" step="any" oninput="mphConverter()" onChange="mphConverter()">
+			<label>Knots</label>
+			<input id="knots" type="number" step="any" oninput="knotsConverter()" onChange="knotsConverter()">
+			<label>Mach</label>
+			<input id="mach" type="number" step="any" oninput="machConverter()" onChange="machConverter()">
+			<input class="reset-button" onclick="resetValues()" value="Reset" readonly>
+		</form>
+	</div>
+</body>
+
+</html>
+	
